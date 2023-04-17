@@ -11,6 +11,9 @@ import {HttpClientModule} from "@angular/common/http";
 import {AppRoutingModule} from "./app-routing.module";
 import { RegisterCreateComponent } from './view/registers/register-create/register-create.component';
 import { RegisterListComponent } from './view/registers/register-list/register-list.component';
+import { PrestationCreateComponent } from './view/prestations/prestation-create/prestation-create.component';
+import { PrestationEditComponent } from './view/prestations/prestation-edit/prestation-edit.component';
+import { PrestationListComponent } from './view/prestations/prestation-list/prestation-list.component';
 
 
 
@@ -24,7 +27,10 @@ import { RegisterListComponent } from './view/registers/register-list/register-l
     IdentifListComponent,
     IdentifViewComponent,
     RegisterCreateComponent,
-    RegisterListComponent
+    RegisterListComponent,
+    PrestationCreateComponent,
+    PrestationEditComponent,
+    PrestationListComponent
   ],
   imports: [
     BrowserModule,
@@ -38,4 +44,5 @@ import { RegisterListComponent } from './view/registers/register-list/register-l
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: []
 })
-export class AppModule { }
+export class AppModule {
+}
