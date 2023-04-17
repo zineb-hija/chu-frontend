@@ -1,11 +1,14 @@
 
-.row {
+.A {
   display: inline-block;
   width: 50%;
+  float: left;
+
 }
 
-.row1 {
+.B {
   display: inline-block;
-  width: 50%;
+  width: 80%;
+  float: right;
 }
 
