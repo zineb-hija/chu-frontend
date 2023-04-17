@@ -38,4 +38,5 @@ import { RegisterListComponent } from './view/registers/register-list/register-l
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: []
 })
-export class AppModule { }
+export class AppModule {
+}
