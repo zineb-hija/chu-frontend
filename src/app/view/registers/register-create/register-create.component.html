@@ -14,55 +14,55 @@
   <form action="#">
     <div class="input-box">
       <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>First name</label>
+      <input id="prenom" type="text" required [(ngModel)]="register.prenom">
+      <label for="prenom">First name</label>
     </div>
     <div class="input-box">
       <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>Last name</label>
+      <input id="nom" type="text" required [(ngModel)]="register.nom">
+      <label for="nom">Last name</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>Birth date</label>
+      <input id="date" type="date" required [(ngModel)]="register.datenais">
+      <label for="date">Birth date</label>
     </div>
 
   <div class="input-box">
       <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>Adress</label>
+      <input id="adress" type="text" required [(ngModel)]="register.adresse">
+      <label for="adress">Adress</label>
     </div>
 
     <div class="input-box">
       <span class="icon"></span>
-      <input type="text" required>
-      <label>Email</label>
+      <input type="text"  id="email" [(ngModel)]="register.email">
+      <label for="email">Email</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-      <input type="tel" required>
-      <label>Tel</label>
+      <input id="tel" type="tel" required [(ngModel)]="register.tel">
+      <label for="tel">Tel</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>CIN</label>
+      <input id="cin" type="text" required [(ngModel)]="register.cin">
+      <label for="cin">CIN</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>IPP</label>
+      <input id="ipp" type="text" required [(ngModel)]="register.ipp">
+      <label for="ipp">IPP</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input type="text" required>
-      <label>RAMED Code</label>
+      <input id="code" type="text" required [(ngModel)]="register.code">
+      <label for="code">RAMED Code</label>
     </div>
 
 
@@ -74,7 +74,7 @@
       <label><input type="checkbox">I agree to the terms & conditions</label>
       <a href="#">Forgot password?</a>
     </div>
-    <button type="submit" class="btn">Sign up</button>
+    <button type="submit" class="btn" (click)="save()">Sign up</button>
     <div class="login-register">
       <p>Already have an account? <a routerLink="/login" href="#" class="login-link">Login</a> </p>
     </div>

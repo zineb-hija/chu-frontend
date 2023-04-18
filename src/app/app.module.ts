@@ -35,8 +35,9 @@ import { PrestationListComponent } from './view/prestations/prestation-list/pres
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
 
 
 
