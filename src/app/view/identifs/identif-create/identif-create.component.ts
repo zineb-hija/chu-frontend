@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
 import {IdentifService} from "../../../controler/service/identif.service";
 import {Identif} from "../../../controler/model/identif";
+import {Router} from "@angular/router";
+
 
 @Component({
   selector: 'app-identif-create',
   templateUrl: './identif-create.component.html',
   styleUrls: ['./identif-create.component.css']
 })
-export class IdentifCreateComponent {
-  constructor(private identifService:IdentifService) {
+
+  export class IdentifCreateComponent {
+
+
+
+  constructor(private router: Router, private identifService: IdentifService) {}
+
+  continue() {
+    this.router.navigate(['/prestation']);
   }
+
   ngOnInit():void{}
   public save():void{
     this.identifService.save().subscribe(data =>{
@@ -42,4 +52,6 @@ export class IdentifCreateComponent {
   }
 
 
+
 }
+

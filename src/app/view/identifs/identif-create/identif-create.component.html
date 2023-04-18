@@ -9,7 +9,6 @@
 
 <body>
 <div class="wrapper">
-  <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
 
   <div class="form-box login">
     <h2>Login</h2>
@@ -29,7 +28,7 @@
         <label><input type="checkbox">Remember me</label>
         <a href="#">Forgot password?</a>
       </div>
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn" (click)="continue()">Login</button>
       <div class="login-register">
         <p>Don't have an account? <a routerLink="/register" href="#" class="register-link">Register</a> </p>
       </div>
