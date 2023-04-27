@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {IdentifService} from "../../../controler/service/identif.service";
-import {Identif} from "../../../controler/model/identif";
 import {RegisterService} from "../../../controler/service/register.service";
 import {Register} from "../../../controler/model/register";
 

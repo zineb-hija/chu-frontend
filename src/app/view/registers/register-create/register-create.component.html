@@ -11,28 +11,28 @@
 
   <div class="form-box register">
   <h2>Registration</h2>
-  <form action="#">
+
     <div class="input-box">
       <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-      <input id="prenom" type="text" required [(ngModel)]="register.prenom">
+      <input id="prenom" type="text" required [(ngModel)]="register.prenom" name="prenom">
       <label for="prenom">First name</label>
     </div>
     <div class="input-box">
       <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-      <input id="nom" type="text" required [(ngModel)]="register.nom">
+      <input id="nom" type="text" required [(ngModel)]="register.nom" name="nom">
       <label for="nom">Last name</label>
     </div>
 
     <div class="input-box">
       <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
-      <input id="date" type="date" required [(ngModel)]="register.datenais">
-      <label for="date">Birth date</label>
+      <input id="datenais" type="date" required [(ngModel)]="register.datenais">
+      <label for="datenais">Birth date</label>
     </div>
 
   <div class="input-box">
       <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input id="adress" type="text" required [(ngModel)]="register.adresse">
-      <label for="adress">Adress</label>
+      <input id="adresse" type="text" required [(ngModel)]="register.adresse">
+      <label for="adresse">Adress</label>
     </div>
 
     <div class="input-box">
@@ -78,7 +78,7 @@
     <div class="login-register">
       <p>Already have an account? <a routerLink="/login" href="#" class="login-link">Login</a> </p>
     </div>
-  </form>
+
 </div>
 </div>
 
