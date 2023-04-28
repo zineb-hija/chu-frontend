@@ -6,6 +6,8 @@ body{
   background: url("CHU-Marrakech-m6.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  animation: change 5s infinite ease-in-out;
+
 }
 header{
   position: fixed;
@@ -54,7 +56,7 @@ header{
 
 .wrapper{
   position: relative;
-  width: 400px;
+  width: 900px;
   height: 750px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, .5);
@@ -208,6 +210,43 @@ header{
 .login-register p a:hover {
   text-decoration: underline;
 }
+@keyframes change {
+  0%
+  {
+    background-image: url(CHU-Marrakech-m6.jpg);
+  }
+  20%
+  {
+    background-image: url(image10.png);
+  }
+  40%
+  {
+    background-image: url(image8.jpg);
+  }
+  60%
+  {
+    background-image: url(image9.jpg);
+  }
+  80%
+  {
+    background-image: url(image11.jpg);
+  }
+  100%
+  {
+    background-image: url(image2.jpeg);
+  }
+}
+
+.A {
+  width: 45%;
+  float: left;
+}.B {
+  width: 45%;
+  float: right;
+}
+
+
+
 
 
 

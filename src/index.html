@@ -1,13 +1,181 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Coding city">
   <title>CHU</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="icon" href="assets/images chu/chuu.ico">
+
+  <link rel="stylesheet" href="assets/stylesheets/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
 </head>
 <body>
-  <app-root></app-root>
+
+<header class="cc-header" id="header">
+  <div class="cc-container">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#" class="logo"><img src="assets/images chu/chuu.ico" alt="Le logo" class="img"></a>
+      <!--End logo -->
+      <nav class="cc-navigation"><!-- Navigation begin -->
+        <ul class="cc-nav-links">
+          <li class="cc-nav-item"><a href="index.html" class="cc-nav-link active">Accueil
+            <i class="fas fa-home"></i></a></li>
+
+          <li class="cc-nav-item cc-submenu"><!-- Submenu link -->
+            <a href="#" class="cc-nav-link">Demander un rendez vous <i class="fas fa-comments"></i></a>
+
+            <ul class="cc-dropdown-menu"><!-- Dropdown menu -->
+              <li class="cc-nav-item"><a href="blog.html" class="cc-nav-link active"> <i
+                class="fas fa-comment"></i></a></li>
+              <li
+                class="cc-nav-item"><a href="single.html" class="cc-nav-link">Créer un compte <i class="fas fa-newspaper"></i></a></li>
+            </ul><!-- End dropdown menu -->
+          </li><!-- End cc-submenu link -->
+
+          <li class="cc-nav-item"><a href="contact.html" class="cc-nav-link">Contact <i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </nav><!-- End Navigation -->
+      <a href="#" class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a><!-- responsive menu icon
+                 -->
+    </div>
+  </div>
+</header><!-- End header section -->
+
+<!-- Banner section -->
+<section class="banner" id="banner">
+  <div class="cc-container">
+    <div class="banner-wrapper">
+      <h1 class="b-title">Centre Hospitalo-Universitaire </h1>
+      <p>Mohammed VI Marrakech</p>
+      <a href="#" class="cc-btn btn-big cc-btn-outline">Découvrir</a>
+    </div>
+  </div>
+</section> <!-- End banner section -->
+
+<!-- Card section -->
+<section class="cc-card py-70" id="card">
+  <div class="cc-container">
+    <div class="card-wrapper">
+      <article>
+        <header>
+          <h4>L'Hopital </h4>
+        </header>
+        <p>Le CHU Mohammed VI (Marrakech) est un centre hospitalier universitaire situé à Marrakech. Il est affilié au ministère de la Santé. Il se compose de 4 hôpitaux, qui sont l'hôpital Ibn Al-Nafees, l'hôpital Ibn Tofail, l'hôpital Al-Razi, l'hôpital mère et enfant, en plus d'un centre d'oncologie et d'hématologie.Le CHU Mohammed VI (Marrakech) a été créé en vertu de la loi n° 82.00, modifiée par la loi n° 37.80 relative aux centres hospitaliers.</p>
+      </article>
+
+    </div>
+  </div>
+</section><!-- End cc-card section -->
+<section class="articles py-70" id="articles">
+  <div class="cc-container">
+    <div class="articles-wrapper">
+      <!-- <header class="section-header">
+           <h1 class="main-title">Lorem ipsum dolor sit amet, consectetur.</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem eius et ex, magnam molestias nulla soluta vero. Accusamus adipisci amet culpa distinctio ducimus esse modi natus nostrum officiis ullam!</p>
+       </header>-->
+
+      <div class="articles-container cc-row">
+        <article class="px-15">
+
+          <header>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem culpa cum cumque dignissimos est ex excepturi expedita odit qui quod rem, tenetur vero. Autem consequatur illum molestiae sed voluptate.</p>
+          <footer><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
+        </article>
+
+        <article class="px-15">
+          <!--coté 2-->
+          <header>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+          </header>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem culpa cum cumque dignissimos est ex excepturi expedita odit qui quod rem, tenetur vero. Autem consequatur illum molestiae sed voluptate.</p>
+          <footer><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mentors section -->
+<section class="mentors py-70 bg-bw" id="mentors">
+  <div class="cc-container">
+    <div class="mentors-wrapper">
+      <header class="section-header"><!-- Mentors header (Title + Desc) -->
+        <h1 class="main-title">Nos Services d'Excellence </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem earum molestiae pariatur suscipit vero. At ea hic illum impedit iste, minus natus nemo nostrum perspiciatis reiciendis repudiandae similique temporibus ullam.</p>
+      </header><!-- End mentors header -->
+
+      <div class="mentors-container cc-row"><!-- Mentors cc-container -->
+        <div class="mentor-box px-15">
+          <div class="box">
+            <div class="mentor-img"><img src="assets\images chu\Radiologie.jpeg" alt="Mentor" class="img img-rounded"></div>
+            <h4 class="l4-title">Radiologie</h4>
+
+          </div>
+        </div>
+
+        <div class="mentor-box px-15">
+          <div class="box">
+            <div class="mentor-img"><img src="assets\images chu\chirurgie generale.jpeg" alt="Mentor" class="img img-rounded"></div>
+            <h4 class="l4-title">Chirurgie générale </h4>
+
+          </div>
+        </div>
+        <div class="mentor-box px-15">
+          <div class="box">
+            <div class="mentor-img"><img src="assets\images chu\Cardiologie.jpg" alt="Mentor" class="img img-rounded"></div>
+            <h4 class="l4-title">Cardiologie</h4>
+
+          </div>
+        </div>
+        <div class="mentor-box px-15">
+          <div class="box">
+            <div class="mentor-img"><img src="assets\images chu\Traumatologie.webp" alt="Mentor" class="img img-rounded"></div>
+            <h4 class="l4-title">Traumatologie</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer py-70 bg-bw" id="footer">
+  <div class="cc-container">
+    <div class="footer-blocks cc-row">
+      <div class="footer-block f-links px-15">
+        <ul>
+          <li><a href="#">A propos de nous</a></li>
+          <li><a href="#">Nous écrire</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-block s-links px-15">
+        <ul>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-youtube"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="copyright" id="copyright">
+        &copy; | Copyright 2023 <script>document.write(new Date().getFullYear());</script> all rights reserved
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>

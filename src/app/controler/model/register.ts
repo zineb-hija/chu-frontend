@@ -8,5 +8,6 @@ export class Register {
   ipp!: string;
   tel!: number;
   email!: string;
+  password!: string;
   adresse!: string;
 }

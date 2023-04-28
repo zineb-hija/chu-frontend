@@ -9,9 +9,11 @@
 <body>
 <div class="wrapper">
 
-  <div class="form-box register">
-  <h2>Registration</h2>
 
+  <div class="form-box register">
+
+      <h2>Registration</h2>
+      <div class="A">
     <div class="input-box">
       <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
       <input id="prenom" type="text" required [(ngModel)]="register.prenom" name="prenom">
@@ -29,18 +31,27 @@
       <label for="datenais">Birth date</label>
     </div>
 
-  <div class="input-box">
-      <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-      <input id="adresse" type="text" required [(ngModel)]="register.adresse">
-      <label for="adresse">Adress</label>
-    </div>
+
 
     <div class="input-box">
       <span class="icon"></span>
       <input type="text"  id="email" [(ngModel)]="register.email">
       <label for="email">Email</label>
     </div>
+    <div class="input-box">
+      <span class="icon"></span>
+      <input type="text"  id="password" [(ngModel)]="register.password">
+      <label for="password">Password</label>
+    </div>
+  </div>
 
+    <div class="B">
+
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <input id="adresse" type="text" required [(ngModel)]="register.adresse">
+        <label for="adresse">Adress</label>
+      </div>
     <div class="input-box">
       <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
       <input id="tel" type="tel" required [(ngModel)]="register.tel">
@@ -70,10 +81,14 @@
 
 
 
-    <div class="remember-forgot">
-      <label><input type="checkbox">I agree to the terms & conditions</label>
-      <a href="#">Forgot password?</a>
-    </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">I agree to the terms & conditions</label>
+        <a href="#">Forgot password?</a>
+      </div>
+</div>
+
+
     <button type="submit" class="btn" (click)="save()">Sign up</button>
     <div class="login-register">
       <p>Already have an account? <a routerLink="/login" href="#" class="login-link">Login</a> </p>
