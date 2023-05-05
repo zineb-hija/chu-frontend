@@ -30,12 +30,12 @@
             <a href="#" class="cc-nav-link">Demander un rendez vous <i class="fas fa-comments"></i></a>
 
             <ul class="cc-dropdown-menu"><!-- Dropdown menu -->
-              <li class="cc-nav-item"><a href="blog.html" class="cc-nav-link active"> <i
+              <li class="cc-nav-item"><a href="identif.html" class="cc-nav-link active">Se connecter <i
                 class="fas fa-comment"></i></a></li>
               <li
-                class="cc-nav-item"><a href="single.html" class="cc-nav-link">Créer un compte <i class="fas fa-newspaper"></i></a></li>
-            </ul><!-- End dropdown menu -->
-          </li><!-- End cc-submenu link -->
+                class="cc-nav-item"><a href="src\app\view\registers\register-create\register-create.component.html" class="cc-nav-link">Créer un compte <i class="fas fa-newspaper"></i></a></li>
+            </ul>
+          </li>
 
           <li class="cc-nav-item"><a href="contact.html" class="cc-nav-link">Contact <i class="fas fa-envelope"></i></a></li>
         </ul>
@@ -63,7 +63,7 @@
     <div class="card-wrapper">
       <article>
         <header>
-          <h4>L'Hopital </h4>
+          <h4><strong>L'Hopital</strong> </h4>
         </header>
         <p>Le CHU Mohammed VI (Marrakech) est un centre hospitalier universitaire situé à Marrakech. Il est affilié au ministère de la Santé. Il se compose de 4 hôpitaux, qui sont l'hôpital Ibn Al-Nafees, l'hôpital Ibn Tofail, l'hôpital Al-Razi, l'hôpital mère et enfant, en plus d'un centre d'oncologie et d'hématologie.Le CHU Mohammed VI (Marrakech) a été créé en vertu de la loi n° 82.00, modifiée par la loi n° 37.80 relative aux centres hospitaliers.</p>
       </article>
@@ -74,30 +74,108 @@
 <section class="articles py-70" id="articles">
   <div class="cc-container">
     <div class="articles-wrapper">
-      <!-- <header class="section-header">
-           <h1 class="main-title">Lorem ipsum dolor sit amet, consectetur.</h1>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem eius et ex, magnam molestias nulla soluta vero. Accusamus adipisci amet culpa distinctio ducimus esse modi natus nostrum officiis ullam!</p>
-       </header>-->
+       <header class="section-header">
+           <h1 class="main-title">Comment prendre un rendez vous?</h1>
+         <img src="assets\images chu\check.png" class="rounded mx-auto d-block" alt="...">
+           <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem eius et ex, magnam molestias nulla soluta vero. Accusamus adipisci amet culpa distinctio ducimus esse modi natus nostrum officiis ullam!</p>-->
+       </header>
 
       <div class="articles-container cc-row">
         <article class="px-15">
 
           <header>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+
+            <h4><strong><br>Pour un patient</strong></h4>
+            <i class="bi bi-check2-circle"></i>
           </header>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem culpa cum cumque dignissimos est ex excepturi expedita odit qui quod rem, tenetur vero. Autem consequatur illum molestiae sed voluptate.</p>
-          <footer><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
+
+
+            <style>
+              .icon-text {
+                display: flex;
+                align-items: center;
+              }
+              .icon {
+                margin-right: 10px;
+              }
+            </style>
+
+          <body>
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><strong><br>Remplir le registre</strong> <br> Remplir le formulaire attentivement et sans faute.Cette étape est obligatoire.</span>
+          </div>
+
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><br><strong>S'identifier</strong><br>Entrer votre e-mail et le mot de passe pour accéder à la page suivante.</span>
+          </div>
+
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><br><strong>Choisir le service</strong><br>Séléctionnez les informations nécessaires pour confirmer votre demande.<br></span>
+          </div>
+
+
+          <footer><br><br><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
         </article>
 
         <article class="px-15">
           <!--coté 2-->
           <header>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+            <h4><strong><br>Pour un utilisateur</strong></h4>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem culpa cum cumque dignissimos est ex excepturi expedita odit qui quod rem, tenetur vero. Autem consequatur illum molestiae sed voluptate.</p>
-          <footer><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
+
+          <style>
+            .icon-text {
+              display: flex;
+              align-items: center;
+            }
+            .icon {
+              margin-right: 10px;
+            }
+          </style>
+
+          <body>
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><strong><br>Remplir le registre</strong> <br> Remplir le formulaire attentivement et sans faute.Cette étape est obligatoire.</span>
+          </div>
+
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><br><strong>S'identifier</strong><br>Entrer votre e-mail et le mot de passe pour accéder à la page suivante.</span>
+          </div>
+
+          <div class="icon-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+            </svg>
+            <span><br><strong>Choisir le service</strong><br>Séléctionnez les informations nécessaires pour confirmer votre demande.<br></span>
+          </div>
+
+
+          <footer><br><br><a href="#" class="cc-btn btn-big">Lire l'article</a></footer>
         </article>
+
+
       </div>
     </div>
   </div>
