@@ -3,7 +3,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("CHU-Marrakech-m6.jpg") no-repeat;
+  background-color: #7a7b7b;
   background-size: cover;
   background-position: center;
 }

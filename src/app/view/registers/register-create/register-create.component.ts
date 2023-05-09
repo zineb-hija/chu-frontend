@@ -2,12 +2,19 @@ import { Component } from '@angular/core';
 import {RegisterService} from "../../../controler/service/register.service";
 import {Register} from "../../../controler/model/register";
 
+
 @Component({
   selector: 'app-register-create',
   templateUrl: './register-create.component.html',
   styleUrls: ['./register-create.component.css']
 })
 export class RegisterCreateComponent {
+  showPassword: boolean = false;
+
+
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
   constructor(private registerService:RegisterService) {
   }
   ngOnInit():void{}

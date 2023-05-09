@@ -3,7 +3,8 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("CHU-Marrakech-m6.jpg") no-repeat;
+  background-color: #8edada;
+
   background-size: cover;
   background-position: center;
   animation: change 5s infinite ease-in-out;
@@ -210,7 +211,7 @@ header{
 .login-register p a:hover {
   text-decoration: underline;
 }
-@keyframes change {
+/*@keyframes change {
   0%
   {
     background-image: url(CHU-Marrakech-m6.jpg);
@@ -235,7 +236,7 @@ header{
   {
     background-image: url(image2.jpeg);
   }
-}
+}*/
 
 .A {
   width: 45%;

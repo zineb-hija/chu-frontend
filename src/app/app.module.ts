@@ -14,6 +14,7 @@ import { RegisterListComponent } from './view/registers/register-list/register-l
 import { PrestationCreateComponent } from './view/prestations/prestation-create/prestation-create.component';
 import { PrestationEditComponent } from './view/prestations/prestation-edit/prestation-edit.component';
 import { PrestationListComponent } from './view/prestations/prestation-list/prestation-list.component';
+import { WelcomeCreateComponent } from './view/welcome/welcome-create/welcome-create.component';
 
 
 
@@ -30,7 +31,8 @@ import { PrestationListComponent } from './view/prestations/prestation-list/pres
     RegisterListComponent,
     PrestationCreateComponent,
     PrestationEditComponent,
-    PrestationListComponent
+    PrestationListComponent,
+    WelcomeCreateComponent
   ],
   imports: [
     BrowserModule,

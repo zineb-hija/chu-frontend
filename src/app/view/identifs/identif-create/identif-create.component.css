@@ -1,9 +1,10 @@
 body{
   display: flex;
-  justify-content: center;
+  justify-content: right;
+
   align-items: center;
   min-height: 100vh;
-  background: url("CHU-Marrakech-m6.jpg") no-repeat;
+  background-color: #8edada;
   background-size: cover;
   background-position: center;
 }
