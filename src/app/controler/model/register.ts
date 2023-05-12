@@ -9,5 +9,6 @@ export class Register {
   tel!: number;
   email!: string;
   password!: string;
-  adresse!: string;
+  copassword!: string
+  adresse!: string;
 }

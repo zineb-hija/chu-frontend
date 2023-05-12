@@ -4,6 +4,7 @@ import {IdentifCreateComponent} from "./view/identifs/identif-create/identif-cre
 import {RegisterCreateComponent} from "./view/registers/register-create/register-create.component";
 import {PrestationCreateComponent} from "./view/prestations/prestation-create/prestation-create.component";
 import {WelcomeCreateComponent} from "./view/welcome/welcome-create/welcome-create.component";
+import {UserCreateComponent} from "./view/users/user-create/user-create.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterCreateComponent },
   { path: 'prestation', component: PrestationCreateComponent },
   { path: 'welcome', component: WelcomeCreateComponent },
+  { path: 'user', component: UserCreateComponent },
 ];
 
 @NgModule({

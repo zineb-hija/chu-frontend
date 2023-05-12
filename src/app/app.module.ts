@@ -1,5 +1,7 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
+
 
 import { AppComponent } from './app.component';
 import { IdentifCreateComponent } from './view/identifs/identif-create/identif-create.component';
@@ -15,6 +17,8 @@ import { PrestationCreateComponent } from './view/prestations/prestation-create/
 import { PrestationEditComponent } from './view/prestations/prestation-edit/prestation-edit.component';
 import { PrestationListComponent } from './view/prestations/prestation-list/prestation-list.component';
 import { WelcomeCreateComponent } from './view/welcome/welcome-create/welcome-create.component';
+import {UserCreateComponent} from "./view/users/user-create/user-create.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -29,6 +33,7 @@ import { WelcomeCreateComponent } from './view/welcome/welcome-create/welcome-cr
     IdentifViewComponent,
     RegisterCreateComponent,
     RegisterListComponent,
+    UserCreateComponent,
     PrestationCreateComponent,
     PrestationEditComponent,
     PrestationListComponent,
@@ -38,7 +43,9 @@ import { WelcomeCreateComponent } from './view/welcome/welcome-create/welcome-cr
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    MatIconModule,
+    FormsModule,
+    BrowserAnimationsModule
 
 
 

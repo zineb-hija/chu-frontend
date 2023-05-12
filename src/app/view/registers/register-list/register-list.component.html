@@ -1,1 +1,31 @@
-<p>register-list works!</p>
+<table class="table table-bordered table-hover" *ngIf="registers.length !=0">
+  <thead>
+  <th>Nom</th>
+  <th>Prenom</th>
+  <th>DateNais</th>
+  <th>cin</th>
+  <th>Code</th>
+  <th>Ipp</th>
+  <th>Email</th>
+  <th>Password</th>
+  <th>Adresse</th>
+  <th>Actions</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of registers; index as i ">
+    <td>{{c.id}}</td>
+    <td>{{c.nom}}</td>
+    <td>{{c.prenom}}</td>
+    <td>{{c.datenais}}</td>
+    <td>{{c.cin}}</td>
+    <td>{{c.code}}</td>
+    <td>{{c.ipp}}</td>
+    <td>{{c.tel}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.password}}</td>
+    <td>{{c.copassword}}</td>
+    <td>{{c.adresse}}</td>
+    <td><span (click)="deleteByRef(c,i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>
