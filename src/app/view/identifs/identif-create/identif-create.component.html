@@ -12,28 +12,33 @@
 
   <div class="form-box login">
     <h2>Login</h2>
-    <form action="#">
+    <form #f="ngForm" (ngSubmit)="continue()">
+
       <div class="input-box">
         <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-        <input type="email" required>
+        <input type="email" name="email" [(ngModel)]="identif.user" required>
         <label>Email</label>
       </div>
 
-
       <div class="input-box">
         <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-        <input type="password" required>
+        <input type="password" name="password" [(ngModel)]="identif.password" required>
         <label>Password</label>
       </div>
+
       <div class="remember-forgot">
-        <label><input type="checkbox">Remember me</label>
+        <label><input type="checkbox" name="remember">Remember me</label>
         <a href="#">Forgot password?</a>
       </div>
-      <button type="submit" class="btn" (click)="continue()">Login</button>
+
+      <button type="submit" [disabled]="f.invalid || !identif.user || !identif.password" class="btn">Login</button>
+
       <div class="login-register">
-        <p>Don't have an account? <a routerLink="/register" href="#" class="register-link">Register</a> </p>
+        <p>Don't have an account? <a routerLink="/register" href="#" class="register-link">Register</a></p>
       </div>
+
     </form>
+
   </div>
 
 

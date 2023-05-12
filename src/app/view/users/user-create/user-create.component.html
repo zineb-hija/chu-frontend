@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="user-create.component.css">
+<header>
+  <h2 class="chu">CHU</h2>
+  <nav class="navigation">
+    <a routerLink="/welcome"  href="#">Accueil</a>
+  </nav>
+</header>
+
+<body>
+<div class="wrapper">
+
+
+  <div class="form-box user">
+
+    <h2>Registration d'utilisateur</h2>
+
+      <div class="input-box">
+        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+        <input id="prenom" type="text" required [(ngModel)]="user.prenom" name="prenom">
+        <label for="prenom">First name</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+        <input id="nom" type="text" required [(ngModel)]="user.nom" name="nom">
+        <label for="nom">Last name</label>
+      </div>
+
+
+      <div class="input-box">
+        <span class="icon"></span>
+        <input type="text"  id="email" [(ngModel)]="user.email">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <input type="password"  id="password" [(ngModel)]="user.password">
+        <label for="password">Password</label>
+      </div>
+
+    </div>
+
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">I agree to the terms & conditions</label>
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+
+    <button type="submit" class="btn" (click)="save()">Sign up</button>
+    <div class="login-user">
+      <p>Already have an account? <a routerLink="/login" href="#" class="login-link">Login</a> </p>
+    </div>
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>

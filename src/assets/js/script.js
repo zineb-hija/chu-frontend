@@ -17,6 +17,8 @@ function menuToggle() {
             icon.classList.add('fa-bars');
         }
     }
+
+
 }
 
 menuToggle();

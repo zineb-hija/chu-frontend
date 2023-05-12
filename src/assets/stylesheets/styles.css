@@ -460,6 +460,17 @@ url("../images chu/blancuni.webp") no-repeat top;background-size:cover;text-alig
 .contact-info .c-info .info-item p{margin-bottom:0;color:#999}  .contact-info .c-form{width:67%;flex:0 0 67%}@media(max-width: 992px){.contact-info .c-form{width:100%;flex:0 0 100%}}  .contact-info .c-form .left-form,.contact-info .c-form .right-form{width:50%;flex:0 0 50%}@media(max-width: 768px){.contact-info .c-form .left-form,.contact-info .c-form .right-form{width:100%;flex:0 0 100%}}  .contact-info .c-form .cc-form-control{width:100%;padding:.375rem 1rem;font-size:13px;color:#999;border:1px solid #f7f7f7;transition:box-shadow .25s ease}  .contact-info .c-form .cc-form-control:hover,.contact-info .c-form .cc-form-control:focus{border-color:rgba(255,164,0,.25)}  .contact-info .c-form .cc-form-control:focus{box-shadow:1px 1px 3px rgba(255,164,0,.6)}  .contact-info .c-form textarea.cc-form-control{height:150px;resize:none}  .contact-info .c-form .button-col{width:100%;text-align:right}  #footer .footer-blocks .footer-block{width:50%;flex:0 0 50%}@media(max-width: 768px){#footer .footer-blocks .footer-block{width:100%;flex:0 0 100%}}  #footer .footer-blocks .f-links li{margin-bottom:1rem}
 #footer .footer-blocks .f-links li a{padding:.5rem 0;color:#7a7b7b;border-bottom:1px solid rgba(0,0,0,0);transition:all .3s ease}
 #footer .footer-blocks .f-links li a:hover{color: #ff0000;border-bottom-color: #ff0000
-}  #footer .footer-blocks .s-links ul{display:flex;align-items:center;width:100%}  #footer .footer-blocks .s-links a{padding:1rem;color:#7a7b7b;transition:.3s ease}  #footer .footer-blocks .s-links a:hover{color: #ff0000
-                                                                                                                                                                      }  #footer .footer-blocks .copyright{width:100%;margin-top:1rem;padding:1rem;color: #ff0000;text-align:center}
+}  #footer .footer-blocks .s-links ul{display:flex;align-items:center;width:100%}
+#footer .footer-blocks .s-links a{padding:1rem;color:#7a7b7b;transition:.3s ease}  #footer .footer-blocks .s-links a:hover{color: #ff0000
+
+}  #footer .footer-blocks .copyright{width:100%;margin-top:1rem;padding:1rem;color: #ff0000;text-align:center}
+body {
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  direction: ltr; /* Par défaut, le texte est de gauche à droite */
+  /* Autres styles de mise en page */
+}
+
 /*# sourceMappingURL=styles.css.map */
