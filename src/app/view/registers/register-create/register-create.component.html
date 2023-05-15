@@ -129,29 +129,33 @@
   <input type="checkbox" id="flip">
   <div class="cover">
     <div class="front">
-      <img src="chirurgie%20generale.jpeg" alt="">
+      <img alt="">
       <div class="text">
-        <span class="text-1">Every new friend is a <br> new adventure</span>
-        <span class="text-2">Let's get connected</span>
+        <span class="text-1">Pour s'inscrire autant qu'utilisateur <br> cliquez ici</span>
+        <br>
+        <button type="submit" class="btn" (click)="save()"><label for="flip"  >Sign up</label>
+        </button>
 
-        <button for="flip" type="submit" class="btn" (click)="save()">Sign up</button>
 
 
-        <div > <label for="flip">For user</label></div>
       </div>
     </div>
-    <div class="back">
+    <div checkbox class="back" id="fli">
       <img class="backImg" src="Radiologie.jpeg" alt="">
       <div class="text">
-        <span class="text-1">Complete miles of journey <br> with one step</span>
-        <span class="text-2">Let's get started</span>
+        <span class="text-1">Pour s'inscrire autant qun patient <br> cliquez ici</span>
+        <button type="submit" class="btn"  (click)="save()"><label for="fli"  >User</label>
+        </button>
       </div>
     </div>
   </div>
   <div class="forms">
     <div class="form-content">
       <div class="login-form">
-        <div class="title">Login</div>
+        <div class="title">Sign up for patient</div>
+
+
+
         <form action="#">
 
           <div class="input-boxes">
@@ -199,10 +203,9 @@
 
 
             <div class="button input-box">
-              <input type="submit" value="Register">
+               <input type="submit" (click)="save()" value="Sign up">
             </div>
-            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
-            <div > <label for="flip">For user</label></div>
+            <div class="text sign-up-text">Already have an account? <label routerLink="/login" >Login now</label></div>
           </div>
         </form>
       </div>
@@ -223,9 +226,9 @@
               <input type="password" placeholder="Enter your password" required>
             </div>
             <div class="button input-box">
-              <input type="submit" value="Sumbit">
+              <input type="submit" value="Sign up">
             </div>
-            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            <div class="text sign-up-text">Already have an account? <label routerLink="/login">Login now</label></div>
           </div>
         </form>
       </div>

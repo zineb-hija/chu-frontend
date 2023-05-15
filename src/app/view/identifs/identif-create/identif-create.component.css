@@ -1,10 +1,9 @@
 body{
   display: flex;
   justify-content: center;
-
+background-image: url("img.jpeg");
   align-items: center;
   min-height: 100vh;
-  background-color: #8edada;
   background-size: cover;
   background-position: center;
 }
@@ -57,9 +56,8 @@ header{
   position: relative;
   width: 400px;
   height: 440px;
-  background: transparent;
+background-color: white;
   border: 2px solid rgba(255, 255, 255, .5);
-  border-radius: 20px;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
   display: flex;
