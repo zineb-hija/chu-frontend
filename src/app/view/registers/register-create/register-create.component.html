@@ -108,22 +108,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
 <div class="container">
   <input type="checkbox" id="flip">
@@ -133,33 +117,19 @@
       <div class="text">
         <span class="text-1">Pour s'inscrire autant qu'utilisateur <br> cliquez ici</span>
         <br>
-        <button type="submit" class="btn" (click)="save()"><label for="flip"  >Sign up</label>
-        </button>
-
-
-
+        <button type="submit" class="btn" routerLink="/user"  >Sign up</button>
       </div>
-    </div>
-    <div checkbox class="back" id="fli">
-      <img class="backImg" src="Radiologie.jpeg" alt="">
-      <div class="text">
-        <span class="text-1">Pour s'inscrire autant qun patient <br> cliquez ici</span>
-        <button type="submit" class="btn"  (click)="save()"><label for="fli"  >User</label>
-        </button>
-      </div>
+
     </div>
   </div>
+
+
   <div class="forms">
     <div class="form-content">
       <div class="login-form">
         <div class="title">Sign up for patient</div>
-
-
-
         <form action="#">
-
           <div class="input-boxes">
-
 
             <div class="input-box">
               <input id="prenom" type="text" required [(ngModel)]="register.prenom" name="prenom" placeholder="First name">
@@ -200,8 +170,6 @@
               <input id="code" type="text" required [(ngModel)]="register.code" placeholder="Enter your code">
             </div>
 
-
-
             <div class="button input-box">
                <input type="submit" (click)="save()" value="Sign up">
             </div>
@@ -209,29 +177,7 @@
           </div>
         </form>
       </div>
-      <div class="signup-form">
-        <div class="title">Signup</div>
-        <form action="#">
-          <div class="input-boxes">
-            <div class="input-box">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Enter your name" required>
-            </div>
-            <div class="input-box">
-              <i class="fas fa-envelope"></i>
-              <input type="text" placeholder="Enter your email" required>
-            </div>
-            <div class="input-box">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Enter your password" required>
-            </div>
-            <div class="button input-box">
-              <input type="submit" value="Sign up">
-            </div>
-            <div class="text sign-up-text">Already have an account? <label routerLink="/login">Login now</label></div>
-          </div>
-        </form>
-      </div>
+
     </div>
   </div>
 </div>

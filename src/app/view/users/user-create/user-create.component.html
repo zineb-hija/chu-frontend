@@ -1,61 +1,65 @@
-<link rel="stylesheet" href="user-create.component.css">
-<header>
-  <h2 class="chu">CHU</h2>
-  <nav class="navigation">
-    <a routerLink="/welcome"  href="#">Accueil</a>
-  </nav>
-</header>
 
 <body>
-<div class="wrapper">
 
+<div class="container">
+  <div class="forms">
+    <div class="form-content">
 
-  <div class="form-box user">
+      <div class="login-form">
 
-    <h2>Registration d'utilisateur</h2>
+      <div class="cover">
+        <div class="front">
+          <img src="Radiologie.jpeg" alt="">
+          <div class="text">
+            <span class="text-1">Pour s'inscrire autant <br> q'un patient <br> cliquez ici</span>
+            <br>
+            <button type="submit" class="btn" routerLink="/register" >Sign up</button>
+          </div>
+        </div>
+      </div></div>
 
-      <div class="input-box">
-        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-        <input id="prenom" type="text" required [(ngModel)]="user.prenom" name="prenom">
-        <label for="prenom">First name</label>
+      <div class="signup-form">
+        <div class="title">Sign up for user</div>
+        <form action="#">
+          <div class="input-boxes">
+            <div class="input-box">
+              <i class="fas fa-user"></i>
+              <input id="prenom" type="text" required [(ngModel)]="user.prenom" name="prenom" placeholder="First name">
+            </div>
+            <div class="input-box">
+              <i class="fas fa-envelope"></i>
+              <input id="nom" type="text" required [(ngModel)]="user.nom" name="nom" placeholder="Last name">
+            </div>
+            <div class="input-box">
+              <i class="fas fa-user"></i>
+              <input type="text"  id="email" [(ngModel)]="user.email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <input type="password" id="password" [(ngModel)]="user.password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <input type="text"  id="copassword" [(ngModel)]="user.copassword" placeholder="Confirmation password">
+            </div>
+            <div class="button input-box">
+              <input type="submit" value="Sign up">
+            </div>
+            <div class="text sign-up-text">Already have an account? <label routerLink="/login">Login now</label></div>
+          </div>
+        </form>
       </div>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-        <input id="nom" type="text" required [(ngModel)]="user.nom" name="nom">
-        <label for="nom">Last name</label>
-      </div>
-
-
-      <div class="input-box">
-        <span class="icon"></span>
-        <input type="text"  id="email" [(ngModel)]="user.email">
-        <label for="email">Email</label>
-      </div>
-      <div class="input-box">
-        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-        <input type="password"  id="password" [(ngModel)]="user.password" >
-        <label for="password">Password</label>
-      </div>
-
-
-
-
-      <div class="remember-forgot">
-        <label><input type="checkbox">I agree to the terms & conditions</label>
-        <a href="#">Forgot password?</a>
-      </div>
-
-
-
-    <button type="submit" class="btn" (click)="save()">Sign up</button>
-    <div class="login-user">
-      <p>Already have an account? <a routerLink="/login" href="#" class="login-link">Login</a> </p>
     </div>
+  </div>
 </div>
-</div>
 
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<style>
+  .icon-text {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+</style>
 </body>
+
+
