@@ -1,4 +1,10 @@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<header>
+  <h2 class="chu">CHU</h2>
+  <nav class="navigation">
+    <a routerLink="/welcome"  href="#">Accueil</a>
+  </nav>
+</header>
 <body>
 
 <div class="container">
@@ -23,21 +29,23 @@
         <form action="#">
           <div class="input-boxes">
             <div class="input-box">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-user-circle"></i>
               <input id="prenom" type="text" required [(ngModel)]="user.prenom" name="prenom" placeholder="First name">
             </div>
             <div class="input-box">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-user-circle"></i>
               <input id="nom" type="text" required [(ngModel)]="user.nom" name="nom" placeholder="Last name">
             </div>
             <div class="input-box">
-              <i class="fas fa-user"></i>
+              <i class="fas fa-envelope"></i>
               <input type="text"  id="email" [(ngModel)]="user.email" placeholder="Enter your email" required>
             </div>
             <div class="input-box">
+              <i class="fas fa-key"></i>
               <input type="password" id="password" [(ngModel)]="user.password" placeholder="Enter your password" required>
             </div>
             <div class="input-box">
+              <i class="fas fa-key"></i>
               <input type="text"  id="copassword" [(ngModel)]="user.copassword" placeholder="Confirmation password">
             </div>
             <div class="button input-box">

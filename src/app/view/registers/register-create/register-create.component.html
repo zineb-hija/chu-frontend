@@ -107,6 +107,7 @@
 
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <body>
 <div class="container">
@@ -132,42 +133,51 @@
           <div class="input-boxes">
 
             <div class="input-box">
+              <i class="fas fa-user"></i>
               <input id="prenom" type="text" required [(ngModel)]="register.prenom" name="prenom" placeholder="First name">
             </div>
 
             <div class="input-box">
+              <i class="fas fa-user"></i>
               <input id="nom" type="text" required [(ngModel)]="register.nom" name="nom" placeholder="Last name">
             </div>
 
             <div class="input-box">
+              <i class="fas fa-calendar"></i>
               <input id="datenais" type="date" required [(ngModel)]="register.datenais" placeholder="Date ">
             </div>
             <div class="input-box">
+              <i class="fas fa-envelope"></i>
               <span class="mdi mdi-email"></span>
             <input type="text"  id="email" [(ngModel)]="register.email"placeholder="Enter your email" required>
           </div>
 
             <div class="input-box">
+              <i class="fas fa-key"></i>
               <input type="password" id="password" [(ngModel)]="register.password" placeholder="Enter your password" required>
             </div>
 
             <div class="input-box">
+              <i class="fas fa-key"></i>
               <input type="text"  id="copassword" [(ngModel)]="register.copassword" placeholder="Confirmation password">
             </div>
 
             <div class="input-box">
+              <i class="fas fa-address-card"></i>
               <input id="adresse" type="text" required [(ngModel)]="register.adresse" placeholder="Adress">
             </div>
             <div class="input-box">
+              <i class="fas fa-phone"></i>
               <input id="tel" type="tel" required [(ngModel)]="register.tel" placeholder="Tel">
             </div>
             <div class="input-box">
+              <i class="fas fa-id-card"></i>
               <input id="cin" type="text" required [(ngModel)]="register.cin" placeholder="Enter your cin">
             </div>
             <div class="input-box">
               <input id="ipp" type="text" required [(ngModel)]="register.ipp" placeholder="Enter your ipp">
             </div><div class="input-box">
-              <input id="code" type="text" required [(ngModel)]="register.code" placeholder="Enter your code">
+            <input id="code" type="text" required [(ngModel)]="register.code" placeholder="Enter your code">
             </div>
 
             <div class="button input-box">

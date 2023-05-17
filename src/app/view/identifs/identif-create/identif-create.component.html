@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <link rel="stylesheet" href="identif-create.component.css">
 <header>
@@ -15,13 +16,13 @@
     <form #f="ngForm" (ngSubmit)="continue()">
 
       <div class="input-box">
-        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+        <span class="icon"><i class="fas fa-envelope"></i></span>
         <input type="email" name="email" [(ngModel)]="identif.user" required>
         <label>Email</label>
       </div>
 
       <div class="input-box">
-        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <span class="icon"><i class="fas fa-lock"></i></span>
         <input type="password" name="password" [(ngModel)]="identif.password" required>
         <label>Password</label>
       </div>
@@ -36,16 +37,7 @@
       <div class="login-register">
         <p>Don't have an account? <a routerLink="/register" href="#" class="register-link">Register</a></p>
       </div>
-
     </form>
-
   </div>
-
-
-
 </div>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
